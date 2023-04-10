@@ -25,10 +25,10 @@ It should be possible for users to:
 
 ### Screenshot
 
-- [Desktop]
+- Desktop
 ![](/screenshots/Screenshot%20(20).png)
 
-- [Mobile]
+- Mobile
 ![](/screenshots/Screenshot%20(19).png)
 
 
