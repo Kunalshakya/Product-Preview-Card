@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-heading : 'Fraunces', serif;
+    --font-family-content : 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: var(--font-family-content);
+}
+
+.main {
+    height: 100vh;
+
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+	align-items: center;
+}
+
+.perfume-card {
+    display: flex;
+    
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 1.5rem 1rem 0;
+}
+
+.perfume-picture-desktop {
+    width: 100%;
+    min-width: 13rem;
+    max-width: 18.75rem;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+.perfume-picture-mobile {
+    display: none;
+}
+
+.perfume-card__information {
+    width: 100%;
+    min-width: 13rem;
+    max-width: 18.75rem;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product-name {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 2px;
+}
+
+.perfume-name {
+    font-family: var(--font-family-heading);
+
+}
+
+.perfume-description {
+    font-size: 14px;
+    line-height: 1.5rem;
+
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.original-price {
+    font-family: var(--font-family-heading);
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.mrp-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.add-to-card-btn {
+    font-family: var(--font-family-content);
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.icon-card {
+    margin-right: 0.5rem;
+
+    position: relative;
+    top: 0.2rem;
+}
+
+.add-to-card-btn:active {
+    background-color: hsl(156, 75%, 15%);
+}
+
+.add-to-card-btn:hover {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+ @media screen and (max-width: 600px) {
+
+    .perfume-card {
+        display: block;
+    }
+
+	.perfume-picture-desktop {
+        display: none;
+    }
+
+    .perfume-picture-mobile {
+        width: 100%;
+
+        display: block;
+
+        border-radius: 10px 10px 0 0;
+    }
+
+    .perfume-card__information {
+        width: 100%;
+        min-width: unset;
+        max-width: none;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+} 
