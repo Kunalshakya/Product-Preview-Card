@@ -26,9 +26,11 @@ It should be possible for users to:
 ### Screenshot
 
 - Desktop
+
 ![](/screenshots/Screenshot%20(20).png)
 
 - Mobile
+
 ![](/screenshots/Screenshot%20(19).png)
 
 
